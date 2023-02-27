@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="shortcut icon" href="img/logo1.png">
-  <script src="js/bootstrap.bundle.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="js/custom.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script defer src="js/bootstrap.bundle.js"></script>
+  <script defer src="js/custom.js"></script>
+
 </head>
 <body>
     <!-- MENÚ    -->
@@ -175,32 +176,35 @@
         </section>
         <!-- FIN APARTADO SOBRE NOSOTROS -->
 
-        <!-- APARTADO DE CONTACTO -->                
-            <div class="container">
-                <form action="" id="contact" >
-                    <div id="logo" class="bouncing">
-                        <img src="img/logo1.png" class="img-fluid" alt="">
+        <!-- APARTADO DE CONTACTO -->
+        <div class="container">
+
+            <form action="#" name="contacto" id="contact">
+                <div id="logo" class="bouncing">
+                    <img src="img/logo1.png" class="img-fluid" alt="">
+                </div>
+                    <div class="humo mt-5">
+                        <h1 class="text-center bebas textoHumo1" id="contacto">CONT<span>ACTO</span></h1>
                     </div>
-                        <div class="humo mt-5">
-                            <h1 class="text-center bebas textoHumo1" id="contacto">CONT<span>ACTO</span></h1>
-                        </div>
-                    <p id="pre">
-                        Si tienes alguna duda, no dudes en ponerte en contacto con nosotros.
-                        <br>
-                        <br>
-                        Recuerda, este formulario es ficticio no se enviará a ningun lado
-                    </p>
-                    <div id="wrapper" class="clearfix">
-            
-                        <input type="text" class="has_icon" name="name" placeholder="Nombre" required>
-                        <input type="email"  class="has_icon" name="email" placeholder="Email" required>
-                        <textarea name="" id="" placeholder="Introduce tu mensaje" required></textarea>
-                        <button id="submit" type="submit" >
-                            <i class="bi bi-send"></i> Enviar
-                        </button>
-                    </div>
-                </form>
-</div>
+                <p id="pre">
+                    Si tienes alguna duda, no dudes en ponerte en contacto con nosotros.
+                    <br>
+                    <br>
+                    Recuerda, este formulario es ficticio no se enviará a ningun lado
+                </p>
+                <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div1"><i class="bi bi-person"> </i>Recuerda que el nombre no puede estar vacio</div>
+                    <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div2"><i class="bi bi-blockquote-left"> </i>Recuerda que el mensaje no puede estar vacío ni superar los 30 caracteres</div>
+                <div id="wrapper" class="clearfix">
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" onfocus="mostrar('div1')" onblur="ocultar('div1')">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Introduce el email" size="35">
+                    <textarea name="mensaje" id="mensaje" placeholder="Introduce tu mensaje" onfocus="mostrar('div2')" onblur="ocultar('div2')"></textarea>
+                    <button id="submit" onclick="capturar()">
+                        <i class="bi bi-send"></i> Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+
 <!-- COMIENZO DEL FOOTER -->
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
