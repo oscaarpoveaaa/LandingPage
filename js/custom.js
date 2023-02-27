@@ -62,10 +62,12 @@ $(document).ready(function(){
         $("#textoEmail").css("color","orange");
         $("#textoEmail").css("font-weight","bold");
     });
-
-
-
-
 });	
+
+$(document).ready(function (){
+    $("#botonFooter").click(function(){
+        $("#footer").toggle(1000);
+    });
+});
 
   
