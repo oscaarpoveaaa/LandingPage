@@ -186,7 +186,7 @@
                     <div class="humo mt-5">
                         <h1 class="text-center bebas textoHumo1" id="contacto">CONT<span>ACTO</span></h1>
                     </div>
-                <p id="pre">
+                <p class="bebas textoContacto">
                     Si tienes alguna duda, no dudes en ponerte en contacto con nosotros.
                     <br>
                     <br>
@@ -195,12 +195,12 @@
                 <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div1"><i class="bi bi-person"> </i>Recuerda que el nombre no puede estar vacio</div>
                     <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div2"><i class="bi bi-blockquote-left"> </i>Recuerda que el mensaje no puede estar vacío ni superar los 30 caracteres</div>
                 <div id="wrapper" class="clearfix">
-                    <div id="textoNombre">Introduce tu nombre:</div><br>
-                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" onfocus="mostrar('div1')" onblur="ocultar('div1')">
-                    <div id="textoEmail">Introduce tu Email:</div><br>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Introduce el email" size="35">
-                    <div id="textoMensaje">Introduce tu mensaje:</div><br>
-                    <textarea name="mensaje" id="mensaje" placeholder="Introduce tu mensaje" onfocus="mostrar('div2')" onblur="ocultar('div2')"></textarea>
+                    <div id="textoNombre" class="bebas textoContacto">Introduce tu nombre:</div><br>
+                    <input  type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" onfocus="mostrar('div1')" onblur="ocultar('div1')">
+                    <div class="bebas textoContacto" id="textoEmail" class="bebas textoContacto">Introduce tu Email:</div><br>
+                    <input  type="text" class="form-control" name="email" id="email" placeholder="Introduce el email" size="35">
+                    <div class="bebas textoContacto" id="textoMensaje">Introduce tu mensaje:</div><br>
+                    <textarea name="mensaje"  id="mensaje" placeholder="Introduce tu mensaje" onfocus="mostrar('div2')" onblur="ocultar('div2')"></textarea>
                     <button id="submit" onclick="capturar()">
                         <i class="bi bi-send"></i> Enviar
                     </button>

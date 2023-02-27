@@ -64,6 +64,8 @@ $(document).ready(function(){
     });
 });	
 
+/* OCULTAR/MOSTRAR FOOTER */
+
 $(document).ready(function (){
     $("#botonFooter").click(function(){
         $("#footer").toggle(1000);
