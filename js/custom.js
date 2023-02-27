@@ -45,3 +45,27 @@ function ocultar(id) {
       div.style.display = "none";
     }
   }
+
+/* JQUERY PARA EL FORMULARIO */
+
+/* AL AÑADIR TEXTO EN EL LABEL SE PONE DE COLOR NARANJA Y EN  NEGRITA */
+$(document).ready(function(){
+	$("#nombre").keydown(function(){
+        $("#textoNombre").css("color","orange");
+        $("#textoNombre").css("font-weight","bold");
+    });
+	$("#mensaje").keydown(function(){
+        $("#textoMensaje").css("color","orange");
+        $("#textoMensaje").css("font-weight","bold");
+    });
+	$("#email").keydown(function(){
+        $("#textoEmail").css("color","orange");
+        $("#textoEmail").css("font-weight","bold");
+    });
+
+
+
+
+});	
+
+  

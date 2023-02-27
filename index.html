@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="img/logo1.png">
   <script defer src="js/bootstrap.bundle.js"></script>
   <script defer src="js/custom.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <!-- MENÚ    -->
@@ -195,8 +195,11 @@
                 <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div1"><i class="bi bi-person"> </i>Recuerda que el nombre no puede estar vacio</div>
                     <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div2"><i class="bi bi-blockquote-left"> </i>Recuerda que el mensaje no puede estar vacío ni superar los 30 caracteres</div>
                 <div id="wrapper" class="clearfix">
+                    <div id="textoNombre">Introduce tu nombre:</div><br>
                     <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" onfocus="mostrar('div1')" onblur="ocultar('div1')">
+                    <div id="textoEmail">Introduce tu Email:</div><br>
                     <input type="text" class="form-control" name="email" id="email" placeholder="Introduce el email" size="35">
+                    <div id="textoMensaje">Introduce tu mensaje:</div><br>
                     <textarea name="mensaje" id="mensaje" placeholder="Introduce tu mensaje" onfocus="mostrar('div2')" onblur="ocultar('div2')"></textarea>
                     <button id="submit" onclick="capturar()">
                         <i class="bi bi-send"></i> Enviar
@@ -204,6 +207,17 @@
                 </div>
             </form>
         </div>
+        <p>4. Uso de toggle con parámetros</p>
+        <script type="text/javascript">
+            $(document).ready(function (){
+                $("#ev5").click(function(){
+                    $("#id3").toggle(1000);
+                });
+            });
+        </script>
+        <button id="ev5">Ocultar/Mostrar</button>
+        <div id="id3">Me ocultaré y mostraré</div>
+        <br/>
 
 <!-- COMIENZO DEL FOOTER -->
 <footer class="bg-dark text-center text-white">
