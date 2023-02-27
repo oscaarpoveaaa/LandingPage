@@ -383,3 +383,8 @@ z-index:99;
   letter-spacing: 2px;
   font-size: 20px;
 }
+
+#aro {
+  position: relative;
+  cursor: pointer;
+}

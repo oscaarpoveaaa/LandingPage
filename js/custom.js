@@ -72,4 +72,19 @@ $(document).ready(function (){
     });
 });
 
+/* BOCA ARITO */
+
+aro.onclick = function() {
+    let start = Date.now();
+
+    let timer = setInterval(function() {
+      let timePassed = Date.now() - start;
+
+      aro.style.left = timePassed / 1.3 + 'px';
+
+      if (timePassed > 2000) clearInterval(timer);
+
+    }, 20);
+  }
+
   
